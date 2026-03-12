@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+        text-decoration: underline;
+        color: blue;
+        text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+            border: 2px solid gold;
+            padding: 5px 10px;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            width: 100px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-top: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="student-form-logo.jpg" alt="School Logo" class="logo">
+
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <div class="input-group">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="input-group">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" style="border:none; padding:0;">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="border:none; padding:0;">Female</label>
+        </div>
+
+        <div class="input-group">
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading" style="border:none; padding:0;">Reading</label>
+
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports" style="border:none; padding:0;">Sports</label>
+
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music" style="border:none; padding:0;">Music</label>
+        </div>
+
+        <div class="input-group">
+            <label for="course">Main Course/Subject:</label>
+            <select id="course" name="course">
+                <option value="it">Information Technology</option>
+                <option value="cs">Computer Science</option>
+                <option value="bit">Business IT</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
